@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1. 테이블 생성</h1>
+    <pre>
+        표를 만들 때는 table 태그를 사용한다.        
+        th : 표의 제목 셀
+        tr : 표의 행
+        td : 표의 일반 셀
+
+        thead : 테이블에서 제목 컬럼을 작성하는 구역
+        tbody : 테이블에서 컬럼값을 작성하는 구역
+        tfoot : footer contents를 작성하는 구역
+
+    </pre>
+
+    <table border="1">
+        <caption>과목별 수업 시간</caption>
+        <tr>
+            <td>JAVA</td>
+            <td>120시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>MySQL</td>
+            <td>40시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>10시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>24시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>40시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>Spring</td>
+            <td>120시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JPA</td>
+            <td>20시간</td>
+            <td>하명도</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>셀 병합</h2>
+    <pre>
+        colspan : 열을 합칠 때 사용
+        rowspan : 행을 합칠 때 사용
+    </pre>
+
+    <table border="1">
+        <tr>
+            <th colspan="3">프로그래밍언어</th>
+            <th colspan="3">데이터베이스</th>
+            <th colspan="3">웹개발</th>
+        </tr>
+        <tr>
+            <td>java</td>
+            <td>120시간</td>
+            <td>하명도</td>
+            <td>MySQL</td>
+            <td>40시간</td>
+            <td>하명도</td>
+            <td>HTML</td>
+            <td>10시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JDBC</td>
+            <td>16시간</td>
+            <td>하명도</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>CSS</td>
+            <td>24시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>16시간</td>
+            <td>하명도</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Spring</td>
+            <td>120시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>JPA</td>
+            <td>20시간</td>
+            <td>하명도</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table border="1">       
+           <tr>
+            <th rowspan="3">프로그래밍언어</th>
+            <td>java</td>
+            <td>120시간</td>
+            <td>하명도</td>            
+        </tr>
+        <tr>
+            <td>JDBC</td>
+            <td>16시간</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>40H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <th>데이터베이스</th>
+            <td>MySQL</td>
+            <td>40H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <th rowspan="4">웹개발</th>
+            <td>HTML</td>
+            <td>10H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>24H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>Spring</td>
+            <td>120H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JPA</td>
+            <td>20H</td>
+            <td>하명도</td>
+        </tr>
+        
+    </table>
+
+    <hr>
+
+    <table border="1">  
+        <tr>
+            <th colspan="4">멀티캠퍼스 과정 안내</th>
+        </tr>
+        <tr>
+            <th> 분류</th>
+            <th>과목명</th>
+            <th>시간</th>
+            <th>강사</th>
+        </tr>        
+        <tr>
+         <th rowspan="3">프로그래밍언어</th>
+         <td>java</td>
+         <td>120시간</td>
+         <td>하명도</td>            
+     </tr>
+     <tr>
+         <td>JDBC</td>
+         <td>16시간</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <td>JavaScript</td>
+         <td>40H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <th>데이터베이스</th>
+         <td>MySQL</td>
+         <td>40H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <th rowspan="4">웹개발</th>
+         <td>HTML</td>
+         <td>10H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <td>CSS</td>
+         <td>24H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <td>Spring</td>
+         <td>120H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+         <td>JPA</td>
+         <td>20H</td>
+         <td>하명도</td>
+     </tr>
+     <tr>
+        <th rowspan="4">과정 시간</th>
+        <th>프로그래밍언어</th>
+        <td colspan="2">176H</td>       
+    </tr>
+    <tr>        
+        <th>데이터베이스</th>
+        <td colspan="2">176H</td>       
+    </tr>
+    <tr>        
+        <th>웹개발</th>
+        <td colspan="2">176H</td>       
+    </tr>
+    <tr>        
+        <td colspan="3">총 390H</td>       
+    </tr>
+     
+ </table>
+
+ <hr>
+ <h2>thead, tbody, tfoot</h2>
+ <pre>
+    thead : 테이블에서 제목 컬럼을 작성하는 구역
+    tbody : 테이블에서 컬럼값을 작성하는 구역
+    tfoot : footer contents를 작성하는 구역
+
+    semantic tag : 의미론적 태그는
+    tag안의 내용이 어떤 의미인지를 나타내기 위해 사용하는 태그
+    화면의 디자인에는 영향을 주지 않음.
+
+    semantic tag를 사용해주면, 검색앤진의 봇이 페이지를 수집할 때
+    보다 내용을 정확하게 수집해 가기 때문에 검색 사이트의 상단에
+    페이지가 노출될 확률이 올라간다.
+
+ </pre>
+ <table border="1">  
+    <thead>
+        <tr>
+            <th colspan="4">멀티캠퍼스 과정 안내</th>
+        </tr>
+        <tr>
+            <th> 분류</th>
+            <th>과목명</th>
+            <th>시간</th>
+            <th>강사</th>
+        </tr> 
+    </thead> 
+    <tbody>
+        <tr>
+        <th rowspan="3">프로그래밍언어</th>
+        <td>java</td>
+        <td>120시간</td>
+        <td>하명도</td>            
+        </tr>
+        <tr>
+        <td>JDBC</td>
+        <td>16시간</td>
+        <td>하명도</td>
+        </tr>
+        <tr>
+        <td>JavaScript</td>
+        <td>40H</td>
+        <td>하명도</td>
+        </tr>
+        <tr>
+            <th>데이터베이스</th>
+            <td>MySQL</td>
+            <td>40H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <th rowspan="4">웹개발</th>
+            <td>HTML</td>
+            <td>10H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>24H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>Spring</td>
+            <td>120H</td>
+            <td>하명도</td>
+        </tr>
+        <tr>
+            <td>JPA</td>
+            <td>20H</td>
+            <td>하명도</td>
+        </tr>
+    </tbody>  
+    <tfoot>
+        <tr>
+            <th rowspan="4">과정 시간</th>
+            <th>프로그래밍언어</th>
+            <td colspan="2">176H</td>       
+        </tr>
+        <tr>        
+            <th>데이터베이스</th>
+            <td colspan="2">176H</td>       
+        </tr>
+        <tr>        
+            <th>웹개발</th>
+            <td colspan="2">176H</td>       
+        </tr>
+        <tr>        
+            <td colspan="3">총 390H</td>       
+        </tr>
+    </tfoot>    
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
