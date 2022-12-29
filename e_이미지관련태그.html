@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 웹 접근성 : 
+        장애인이나 몸이 불편하신 분들도 웹페이지에 있는 정보에 접근함에 있어서 비장애인과 동등하게 이용할 수 있게끔 하는 것. -->
+    <h1>이미지 관련 태그 : img</h1>
+    
+    <h2>alt 속성</h2>
+    <pre>
+         사진의 경로가 잘 못 되었거나, 이미지를 제대로 표현할 수 없는 경우 표시할 대체 텍스트 속성.
+         Screen Reader기가 읽을 이미지에 대한 설명.
+    </pre>
+
+    <img src="./resources/image/city1.PNG" alt="이탈리아 로마의 풍경">
+    <img src="https://dimg.donga.com/wps/SPORTS/IMAGE/2021/09/16/109285971.1.jpg" alt="마흔 네살 원빈">
+
+    <h3>width와 height</h3>
+    <img src="./resources/image/flower1.PNG" width="200" height="150">
+    <img src="./resources/image/flower2.PNG" width="200" height="150">
+    <img src="./resources/image/flower3.PNG" width="200" height="150">
+    <img src="./resources/image/flower4.PNG" width="200" height="150">
+    <img src="./resources/image/flower5.PNG" width="200" height="150">
+
+    <h3>usemap 속성</h3>
+    <p>이미지 구역을 나누어 각 구역에 원하는 링크를 설정, map, area태그를 사용</p>
+
+    <img src="./resources/image/river1.PNG" width="600" height="500" usemap="#Map">
+
+    <map name="Map">
+        <!-- area태그를 자식태그로 가지고 있다.
+             area 태그 : 구분된 이미지의 구역
+                    1) shape : 구역을 나눌 때 구역의 모양 (사각형, 원, 다각형)
+                    2) coords : 구역을 지정하기 위한 좌표
+                    3) href : 링크
+        -->
+
+        <!-- 좌상단, 우하단 좌표 -->
+        <area shape="rect" coords="0,0,600,250" href="https://www.naver.com">
+        <area shape="rect" coords="300,0,600,500" href="https://www.google.com">
+    </map>
+
+
+
+</body>
+</html>
